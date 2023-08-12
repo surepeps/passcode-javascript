@@ -1,24 +1,20 @@
-let enteredNumber = '';
-const numberInput = document.getElementById('numberInput');
+// Selecting all necessary Elements
+let numbersBtn = document.getElementsByClassName("button");
+let displayTag = document.getElementById("displayCode");
+let deleteNum = document.getElementById("buttonClear");
 
-document.getElementById('button').addEventListener('click', () => addNumber(e));
+// Empty array for code collection
+let codeArray = [];
 
-document.getElementById('clearButton').addEventListener('click', clearNumber);
+// Listen to each of the buttons
+let numbersBtnLength = numbersBtn.length;
 
-document.getElementById('callButton').addEventListener('click', validateNumber);
-
-function addNumber(number) {
-  enteredNumber += number;
-  numberInput.value = enteredNumber;
+// Create a for loop
+for (let i = 0; i < numbersBtnLength; i++){
+    numbersBtn[i].addEventListener("click", function() {
+        codeArray.push(this.textContent);
+        console.log(codeArray);
+    })
 }
 
-function clearNumber() {
-  enteredNumber = '';
-  numberInput.value = enteredNumber;
-}
 
-function validateNumber() {
-  if (enteredNumber === '4629') {
-    return('Successful');
-  } return('Wrong');
-  }
