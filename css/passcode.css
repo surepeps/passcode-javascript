@@ -28,12 +28,18 @@
   
 
   .passcodeScreen {
-    height: 600px;
-    width: 300px;
+    height: 700px;
+    width: 380px;
     background:url("../images/gradient-background-4480x2520-9837\ 1\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
     border: black solid 12px;
     border-radius: 20px;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
   }
 
   .displayCode {
@@ -52,7 +58,7 @@
   }
 
   .passcodeButton {
-    gap: 15px;
+    gap: 20px;
     outline: none;
     padding: 20px;
     margin-top: 120px ;
@@ -67,7 +73,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     margin-bottom: 10px;   
   }
 
