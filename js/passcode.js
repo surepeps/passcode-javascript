@@ -33,3 +33,19 @@ function displayCode(numArray) {
     let newNums = numArray.join("");
     displayTag.textContent = newNums;
 }
+
+// The delete action
+deleteNum.addEventListener("click",function() { 
+    // to check if the value exists and delete the last value from the array
+    if (codeArray.length){
+        codeArray.pop()
+        // This is displaying the current array once the delete button is clicked
+        displayCode(codeArray)
+    }
+    // This checks if there is no value in the array and then hides the delete button
+    if(!codeArray.length) {
+        deleteNum.style.visibility = "hidden";
+    }
+    
+    
+})
