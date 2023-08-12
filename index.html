@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passcode Screen</title>
+    <link rel="stylesheet" href="css/passcode.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="passcodeScreen">
+            <nav>
+                <header>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 39 39" fill="none">
+                        <circle cx="19.5" cy="19.5" r="19.5" fill="black"/>
+                    </svg>
+                    <h1 id="time">12:43</h1>
+                    <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="31" height="28" rx="7" fill="#7A7A7A"/>
+                    </svg>
+                    <i class="fa fa-battery-full" aria-hidden="true"></i>
+                    <i class="fa fa-wifi" aria-hidden="true"></i>
+                </header>
+            </nav>
+            <div class="displayCode">
+                <button id="btn"></button>
+            </div>
+            <div class="passcodeButton">
+                
+                <div class="zero">
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                </div>
+                <div class="zero">
+                    <button class="button">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                </div>
+                <div class="zero">
+                    <button class="button">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                </div>
+                <div class="zero">
+                    <button id="buttonCall"><i class="fa fa-phone" aria-hidden="true"></i></button>
+                    <button class="button">0</button>
+                    <button id="buttonClear"><i class="icon-remove"></i></button>
+                </div>
+
+            </div>
+            <div class="foot">
+                <footer></footer>
+            </div>
+        </div>
+            
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
