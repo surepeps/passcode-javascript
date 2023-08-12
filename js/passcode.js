@@ -16,8 +16,7 @@ for (let i = 0; i < numbersBtnLength; i++){
         // check if the length of the array is 4
         if (codeArray.length < 4) {
             codeArray.push(this.textContent);
-            // display the numbers
-            displayCode(codeArray)
+            console.log(codeArray);
         }
 
         // activate the delete icon when the array lenght is greater or equal to 1
@@ -28,24 +27,4 @@ for (let i = 0; i < numbersBtnLength; i++){
     })
 }
 
-// The display function
-function displayCode(numArray) {
-    let newNums = numArray.join("");
-    displayTag.textContent = newNums;
-}
 
-// The delete action
-deleteNum.addEventListener("click",function() { 
-    // to check if the value exists and delete the last value from the array
-    if (codeArray.length){
-        codeArray.pop()
-        // This is displaying the current array once the delete button is clicked
-        displayCode(codeArray)
-    }
-    // This checks if there is no value in the array and then hides the delete button
-    if(!codeArray.length) {
-        deleteNum.style.visibility = "hidden";
-    }
-    
-    
-})
